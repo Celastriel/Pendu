@@ -1,0 +1,75 @@
+html {
+font-size: 16px;
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    h1{
+        text-align: center;
+    }
+    .gameOver{
+        font-size: 8rem;
+    }
+}
+
+
+.layout{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+    .letter{
+        background-color: whitesmoke;
+        border: 1px black solid;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+}
+
+.padding{
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50rem;
+    justify-content: center;
+    border: 1px black solid;
+    .letter{
+        background-color: whitesmoke;
+        border: 1px black solid;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem;
+        &:hover{
+            background-color: gray;
+        }
+    }
+}
+
+.life{
+    display: flex;
+    flex-direction: row;
+    .heart {
+        fill: red;
+        position: relative;
+        top: 5px;
+        width: 50px;
+        animation: pulse 1s ease infinite;
+        margin: 1rem;
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+      }
+}
